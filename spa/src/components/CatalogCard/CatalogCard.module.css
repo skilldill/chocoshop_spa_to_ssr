@@ -1,0 +1,11 @@
+.card {
+    max-width: 350px;
+    border: 1px solid var(--border-color);
+    padding: 16px;
+}
+
+.cardTitle {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}

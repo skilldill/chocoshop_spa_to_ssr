@@ -1,0 +1,15 @@
+.title {
+    margin-bottom: 50px;
+    font-size: 70px;
+}
+
+.poster {
+    width: 400px;
+    height: 600px;
+    overflow: hidden;
+}
+
+.content {
+    display: flex;
+    gap: 100px;
+}

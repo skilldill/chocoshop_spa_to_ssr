@@ -1,0 +1,9 @@
+footer {
+    border-top: 1px solid var(--border-color);
+    padding: 60px 0;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: 700;
+}
