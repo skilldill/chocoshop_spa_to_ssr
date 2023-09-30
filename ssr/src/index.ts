@@ -11,6 +11,7 @@ import {
   ResourceSlot,
 } from '@tramvai/tokens-render';
 import { HeaderModule } from '~shared/header';
+import './styles/common.module.css';
 
 createApp({
   name: 'ssr',

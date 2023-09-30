@@ -8,5 +8,6 @@ module.exports = {
     require('postcss-custom-media')({
       preserve: false,
     }),
+    require("postcss-global-import"),
   ],
 };
