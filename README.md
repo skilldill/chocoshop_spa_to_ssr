@@ -1,6 +1,6 @@
 # Project-example SPA to SSR
 
-## Work with api
+## Work with API
 
 
 ```bash
@@ -9,7 +9,7 @@ cd api
 ```
 ```bash
 # install packages
-npm run install
+npm install
 ```
 ```bash
 # start api
@@ -25,9 +25,25 @@ cd spa
 ```
 ```bash
 # install packages
-npm run install
+npm install
 ```
 ```bash
 # start spa
 npm run dev
+```
+
+## Work with SSR
+Before launch SSR need start api
+
+```bash
+# move to ssr
+cd ssr
+```
+```bash
+# install packages
+npm install
+```
+```bash
+# start ssr
+npm run start
 ```
