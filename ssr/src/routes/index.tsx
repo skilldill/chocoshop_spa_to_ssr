@@ -1,41 +1,66 @@
+import { FC } from 'react';
 import styles from './index.module.css';
+import { image as  ShopJPEG } from 'assets/shop.jpeg';
+import { image as ChocomanJPEG } from 'assets/chocoman.jpeg';
+import { image as ChocoitemsJPEG } from 'assets/chocoitems.jpeg';
 
-export const IndexPage = () => {
-  return (
-    <main>
-      <p>Welcome!</p>
-      <p>
-        To change the page content, edit the file{' '}
-        <code className={styles.Code}>routes/index.tsx</code>
-      </p>
-      <p>Tramvai resources:</p>
-      <ul>
-        <li>
-          <a
-            href="https://tramvai.dev/docs/tutorials/pokedex-app/new-app"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Tutorial
-          </a>
-        </li>
-        <li>
-          <a href="https://tramvai.dev/" target="_blank" rel="noreferrer">
-            Documentation
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://github.com/tramvaijs/tramvai"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Source code
-          </a>
-        </li>
-      </ul>
-    </main>
-  );
+const MainPage: FC = () => {
+    return (
+        <div className={styles.main}>
+            <h1 className={styles.title}>Магазин шоколада</h1>
+            <div className={styles.block}>
+                <div>
+                    <img src={ShopJPEG.src} alt="Магазин шоколада" width={500} />
+                </div>
+                <p>
+                    Добро пожаловать в мир искусства сладостей - настоящий рай
+                    для любителей шоколада! В этом уникальном магазине шоколада
+                    вы погрузитесь в чарующую атмосферу, где каждый шаг наполнен
+                    изысканными ароматами и восхитительными вкусами. Неустанно
+                    танцующие лучи шоколадного света воплощают ваши самые
+                    сокровенные фантазии о нежных слияниях фруктовых и ореховых
+                    нот с роскошной горечью темного шоколада.
+                </p>
+            </div>
+
+            <div className={styles.block}>
+                <p>
+                    Пройдите по элегантным полкам, увлекающим вас в тропические
+                    леса, где экзотические фрукты и свежие цветы рисуют свои
+                    великолепные оттенки на покрытых золотым глазурью таблетках
+                    шоколада. Каждый продукт сочно и соблазнительно окутывает
+                    ваш вкусовой рецептор, позволяя вам окунуться в глубины
+                    нектара божественного удовольствия.
+                </p>
+                <div>
+                    <img
+                        src={ChocoitemsJPEG.src}
+                        alt="Магазин шоколада"
+                        width={500}
+                    />
+                </div>
+            </div>
+
+            <div className={styles.block}>
+                <div>
+                    <img
+                        src={ChocomanJPEG.src}
+                        alt="Магазин шоколада"
+                        width={500}
+                    />
+                </div>
+                <p>
+                    Наши эксперты по шоколаду тщательно отбирают только лучшие
+                    сорта какао и ингредиенты, чтобы создавать великолепные
+                    композиции, как произведения искусства. Все, что вы найдете
+                    здесь, от роскошных шоколадных батончиков до изысканных
+                    травяных шоколадных таблеток, нежно ласкает вашу душу и
+                    подарит вам незабываемые впечатления.
+                </p>
+            </div>
+        </div>
+    );
 };
 
-export default IndexPage;
+
+export default MainPage;

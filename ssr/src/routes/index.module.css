@@ -1,3 +1,19 @@
-.Code {
-  font-family: Consolas, Courier New, monospace;
+.main {
+}
+
+.title {
+    font-size: 70px;
+    margin-bottom: 100px;
+}
+
+.block {
+    padding: 50px 0;
+    display: flex;
+    gap: 100px;
+    align-items: center;
+}
+
+.block p {
+    font-size: 20px;
+    line-height: 38px;
 }
