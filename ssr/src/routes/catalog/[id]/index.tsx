@@ -1,9 +1,11 @@
 import { FC, useEffect } from 'react';
 import styles from './ChocoPage.module.css';
-import { useCatalog } from '../../../../hooks/useCatalog';
+import { useCatalog } from '../../../hooks/useCatalog';
 import { useRoute } from '@tramvai/module-router';
+import { PageComponent } from '@tramvai/react';
+import { fetchCurrentChocoAction } from 'store/catalog/actions';
 
-const ChocoPage: FC = () => {
+const ChocoPage: PageComponent = () => {
     const { fetchCurrent, current } = useCatalog();
     const { params } = useRoute();
     const { id } = params;
@@ -48,5 +50,7 @@ const ChocoPage: FC = () => {
         </div>
     );
 };
+
+ChocoPage.actions = [fetchCurrentChocoAction]
 
 export default ChocoPage;

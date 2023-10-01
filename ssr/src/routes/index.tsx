@@ -1,10 +1,10 @@
-import { FC } from 'react';
 import styles from './index.module.css';
 import { image as  ShopJPEG } from 'assets/shop.jpeg';
 import { image as ChocomanJPEG } from 'assets/chocoman.jpeg';
 import { image as ChocoitemsJPEG } from 'assets/chocoitems.jpeg';
+import { PageComponent } from '@tramvai/react';
 
-const MainPage: FC = () => {
+const MainPage: PageComponent = () => {
     return (
         <div className={styles.main}>
             <h1 className={styles.title}>Магазин шоколада</h1>
@@ -61,6 +61,5 @@ const MainPage: FC = () => {
         </div>
     );
 };
-
 
 export default MainPage;

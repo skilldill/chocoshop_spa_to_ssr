@@ -12,6 +12,7 @@
     "@tramvai/core": "^2.153.1",
     "@tramvai/module-common": "^2.153.1",
     "@tramvai/module-error-interceptor": "^2.153.1",
+    "@tramvai/module-http-client": "^2.153.1",
     "@tramvai/module-render": "^2.153.1",
     "@tramvai/module-router": "^2.153.1",
     "@tramvai/module-seo": "^2.153.1",

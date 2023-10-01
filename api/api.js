@@ -31,7 +31,8 @@ api.get('/api/catalog/:id', (req, res) => {
     if (!foundData)
         return res.send(res.status(404));
     
-    setTimeout(() => {
-        res.send(foundData);
-    }, 3000)
+    // setTimeout(() => {
+    //     res.send(foundData);
+    // }, 3000)
+    res.send(foundData);
 });

@@ -1,24 +1,23 @@
 import { FC } from 'react';
 import styles from './Header.module.css';
-import { Link } from '@tramvai/module-router';
 
 export const Header: FC = () => {
     return (
         <header>
-            <Link url="/">
+            <a href="/">
                 <span className={styles.logo}>Магазин шоколада</span>
-            </Link>
+            </a>
 
             <nav>
                 <ul className={styles.menuItems}>
                     <li className={styles.menuItem}>
-                        <Link url="/">Главная</Link>
+                        <a href="/">Главная</a>
                     </li>
                     <li className={styles.menuItem}>
-                        <Link url="/catalog">Каталог</Link>
+                        <a href="/catalog">Каталог</a>
                     </li>
                     <li className={styles.menuItem}>
-                        <Link url="/contacts">Контакты</Link>
+                        <a href="/contacts">Контакты</a>
                     </li>
                 </ul>
             </nav>

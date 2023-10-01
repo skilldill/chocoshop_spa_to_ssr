@@ -1,9 +1,10 @@
-import { FC } from 'react';
 import { CatalogCard } from '../../components/CatalogCard';
 import styles from './CatalogPage.module.css';
-import { useCatalog } from '../../../hooks/useCatalog';
+import { useCatalog } from '../../hooks/useCatalog';
+import { PageComponent } from '@tramvai/react';
+import { fetchCatalogAction } from 'store/catalog/actions';
 
-const CatalogPage: FC = () => {
+const CatalogPage: PageComponent = () => {
     const { catalog } = useCatalog();
 
     return (
@@ -17,5 +18,7 @@ const CatalogPage: FC = () => {
         </div>
     );
 };
+
+CatalogPage.actions = [fetchCatalogAction];
 
 export default CatalogPage;
