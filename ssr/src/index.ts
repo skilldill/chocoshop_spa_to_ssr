@@ -10,8 +10,10 @@ import {
   ResourceType,
   ResourceSlot,
 } from '@tramvai/tokens-render';
-import { HeaderModule } from '~shared/header';
+import { HeaderModule } from '~shared/Header';
 import './styles/common.module.css';
+import { FooterModule } from '~shared/Footer';
+import { LayoutModule } from '~shared/Layout';
 
 createApp({
   name: 'ssr',
@@ -23,6 +25,8 @@ createApp({
     ServerModule,
     ErrorInterceptorModule,
     HeaderModule,
+    FooterModule,
+    LayoutModule,
   ],
   providers: [
     {
